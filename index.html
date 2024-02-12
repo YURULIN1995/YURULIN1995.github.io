@@ -1,116 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Landing Page</title>
+    <title>Your Blog Title</title>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
+            font-family: Arial, sans-serif;
+            margin: 20px;
             padding: 0;
-            background-color: #f8f8f8;
-            color: #333;
+            background-color: #f4f4f4;
         }
 
         header {
-            background-color: #34A853;
+            background-color: #333;
             color: #fff;
+            padding: 10px;
             text-align: center;
-            padding: 20px;
         }
 
         section {
             max-width: 800px;
-            margin: 20px auto;
+            margin: auto;
             padding: 20px;
             background-color: #fff;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
+            margin-top: 20px;
         }
 
-        h1, h2 {
-            color: #34A853;
+        article {
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #333;
         }
 
         p {
             color: #555;
         }
-
-        form {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        label {
-            margin: 10px 0;
-            font-weight: bold;
-        }
-
-        input {
-            padding: 10px;
-            margin-bottom: 15px;
-            width: 100%;
-            box-sizing: border-box;
-        }
-
-        .cta-button {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #34A853;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-        }
-
-        footer {
-            background-color: #34A853;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-
-        @media only screen and (max-width: 600px) {
-            section {
-                padding: 10px;
-            }
-        }
     </style>
 </head>
-
 <body>
-
     <header>
-        <h1>Your Product Name</h1>
-        <p>Unlock the power of [Your Product] today!</p>
+        <h1>Your Blog Title</h1>
     </header>
 
     <section>
-        <h2>Join Our Mailing List</h2>
-        <p>Subscribe to receive updates and exclusive offers.</p>
+        <article>
+            <h2>Blog Post Title 1</h2>
+            <p>Published on January 26, 2024</p>
+            <p>This is your blog post content. You can write about anything you want here.</p>
+        </article>
 
-        <form action="#" method="post">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <article>
+            <h2>Blog Post Title 2</h2>
+            <p>Published on January 27, 2024</p>
+            <p>This is another blog post. Feel free to add more posts as needed.</p>
+        </article>
 
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        <!-- Add more articles as needed -->
 
-            <button type="submit" class="cta-button">Subscribe</button>
-        </form>
     </section>
-
-    <footer>
-        <p>&copy; 2024 Your Company. All rights reserved.</p>
-    </footer>
-
 </body>
-
-    </html>
-    
+</html>
