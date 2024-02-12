@@ -3,64 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Blog Title</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 10px;
-            text-align: center;
-        }
-
-        section {
-            max-width: 800px;
-            margin: auto;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin-top: 20px;
-        }
-
-        article {
-            margin-bottom: 20px;
-        }
-
-        h2 {
-            color: #333;
-        }
-
-        p {
-            color: #555;
-        }
-    </style>
+    <title>Your Name - Inventor and Simplifier</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Your Blog Title</h1>
+        <h1>Your Name</h1>
+        <p>Inventor and Simplifier</p>
     </header>
 
-    <section>
-        <article>
-            <h2>Blog Post Title 1</h2>
-            <p>Published on January 26, 2024</p>
-            <p>This is your blog post content. You can write about anything you want here.</p>
-        </article>
-
-        <article>
-            <h2>Blog Post Title 2</h2>
-            <p>Published on January 27, 2024</p>
-            <p>This is another blog post. Feel free to add more posts as needed.</p>
-        </article>
-
-        <!-- Add more articles as needed -->
-
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Your brief personal introduction goes here...</p>
     </section>
+
+    <section id="story">
+        <h2>Brand Story</h2>
+        <p>Your brand story and philosophy go here...</p>
+    </section>
+
+    <section id="latest-articles">
+        <h2>Latest Articles</h2>
+        <div class="article-bar">
+            <!-- Display your 3 latest articles here -->
+            <div class="article">Article 1</div>
+            <div class="article">Article 2</div>
+            <div class="article">Article 3</div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out to me for...</p>
+        <!-- Add your Calendly link and other contact options here -->
+        <button onclick="downloadFreeGuide()">Free Download</button>
+        <button onclick="scheduleFreeConsultation()">Schedule Free Consultation</button>
+        <button onclick="purchaseCoachingSession()">Purchase 1-on-1 Coaching</button>
+    </section>
+
+    <section id="logic-flow">
+        <h2>Logic Flow</h2>
+        <!-- Embed your draw.io charts using iframes here -->
+        <iframe src="link_to_your_drawio_chart" frameborder="0" width="100%" height="600px"></iframe>
+    </section>
+
+    <footer>
+        <p>Your Copyright © 2024. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
