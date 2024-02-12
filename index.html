@@ -1,10 +1,36 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>朔夜Sakuya資源模組統合</title>
-  </head>
-  <body>
-    <h1>關於我</h1>
-    <p>越抽象，越簡單。</p>
-  </body>
-</html>
+<head>
+<style>
+body {margin:0;}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #04AA6D;
+}
