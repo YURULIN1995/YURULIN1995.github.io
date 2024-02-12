@@ -46,32 +46,29 @@
             background-color: #d4a14d;
         }
         
-        navigation {
-    background-color: green;
-        }
-
-        navigation * {
-            display: inline;
-            }
-        
-        navigation ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 5px;
+       .navigation {
+    background-color: rgb(169, 222, 193);
     overflow: hidden;
+       }
+        
+        .navigation a {
+    display: inline-block;
+    color: rgb(1, 64, 30);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
         }
         
-        navigation a {
-    display: inline;
-    width: 60px;
+        .navigation-left {
+    float: left;
         }
-        .navigation-left li {
-            float: left;
-        }
-        
-        .navigation-right li {
+        .navigation-right {
     float: right;
-            }
+        }
+        .navigation a:hover {
+    background-color: #ddd;
+    color: rgb(1, 64, 30);
+        }
 
         footer {
             background-color: #346b3c;
