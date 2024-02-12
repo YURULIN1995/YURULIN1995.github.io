@@ -6,65 +6,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>朔夜SAKUYA資源模組整合</title>
     <style>
-        /* 其他樣式保持不變 */
+       /* Add this CSS for mobile menu */
+@media screen and (max-width: 600px) {
+    .navigation {
+        display: none; /* Hide regular navigation on small screens */
+    }
 
-        @media only screen and (max-width: 768px) {
-            .navigation-left {
-                float: none;
-                text-align: center;
-            }
+    .mobile-menu-icon {
+        display: block; /* Show mobile menu icon */
+    }
 
-            .navigation-right {
-                float: none;
-                text-align: center;
-            }
+    .navigation-right {
+        flex-direction: column; /* Stack menu items vertically on small screens */
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        background-color: rgb(169, 222, 193);
+        padding: 10px;
+        display: none; /* Hide mobile menu items by default */
+    }
 
-            .navigation-right ul {
-                display: none;
-            }
+    .navigation-right a {
+        margin: 5px 0;
+    }
+}
 
-            .sidebar-links {
-                display: flex;
-                flex-direction: column;
-                position: static;
-                top: auto;
-                right: auto;
-                background-color: #264b28;
-                padding: 10px;
-            }
+/* Add this CSS for the hamburger icon */
+.mobile-menu-icon {
+    display: none; /* Hide the icon by default on larger screens */
+    cursor: pointer;
+}
 
-            .sidebar-links a {
-                color: #fff;
-                text-decoration: none;
-                margin: 5px 0;
-                text-align: center;
-            }
-        }
+.mobile-menu-icon img {
+    width: 30px; /* Adjust the width as needed */
+    height: auto;
+}
+
+/* Add this script to toggle the mobile menu */
+<script>
+    function toggleMobileMenu() {
+        const mobileMenu = document.querySelector('.navigation-right');
+        mobileMenu.style.display = mobileMenu.style.display === 'none' ? 'flex' : 'none';
+    }
+</script>
     </style>
 </head>
 
 <body>
-    <header>
-        <h1>免費下載：資源模組3工具3步驟與應避開的3地雷
-            <a href="#" class="cta-button">我想要槓桿我的力氣100倍！</a>
-        </h1>
-    </header>
-    <nav class="navigation">
-        <div class="navigation-left">
-            <ul>
-                <li><a href="index.html"><img src="your-logo-url.jpg" alt="Logo"></a></li>
-            </ul>
-        </div>
+    <!-- Add this in the header section -->
+<header>
+    <h1>免費下載：資源模組3工具3步驟與應避開的3地雷
+        <a href="#" class="cta-button">我想要槓桿我的力氣100倍！</a>
+    </h1>
+    <div class="mobile-menu-icon" onclick="toggleMobileMenu()">
+        <img src="hamburger-icon.png" alt="Mobile Menu Icon">
+    </div>
+</header>
 
-        <div class="navigation-right">
-            <ul>
-                <li><a href="about.html">關於朔夜</a></li>
-                <li><a href="course.html">資源模組整合教練課</a></li>
-                <li><a href="blog.html">文章</a></li>
-                <li><a href="contact.html">聯絡</a></li>
-            </ul>
-        </div>
-    </nav>
+<!-- Modify the navigation section -->
+<nav class="navigation">
+    <div class="navigation-left">
+        <ul>
+            <li><a href="index.html"><img src="your-logo-url.jpg" alt="Logo"></a></li>
+        </ul>
+    </div>
+
+    <div class="navigation-right">
+        <ul>
+            <li><a href="about.html">關於朔夜</a></li>
+            <li><a href="course.html">資源模組整合教練課</a></li>
+            <li><a href="blog.html">文章</a></li>
+            <li><a href="contact.html">聯絡</a></li>
+        </ul>
+    </div>
+</nav>
     <img src="#" alt="Sidebar Icon" class="sidebar-icon" onclick="toggleSidebar()">
     <div class="sidebar-links">
         <a href="index.html">首頁</a>
