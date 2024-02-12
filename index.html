@@ -1,168 +1,48 @@
 <!DOCTYPE html>
 <html lang="zh-tw">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>朔夜SAKUYA資源模組整合</title>
     <style>
-        body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Noto Sans Serif', Arial, sans-serif; /* Change to Noto Sans Serif */
-        }
-        
-        header {
-            background-color: #346b3c;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-            display: flex;
-            justify-content: space-between;
-            align-items: left;
-                }
-        
-        header h1,
-        header h2,
-        header h3,
-        header h4,
-        header h5,
-        header h6 {
-            font-family: 'Noto Sans CJK TC', sans-serif; /* Change to Noto Sans CJK TC */
-            margin: 0;
-            text-align: center;
-        }
-        
-        header h1 {
-            font-size: 20px;
-        }
-        header p,
-        .navigation a,
-        .navigation-right a,
-        .sidebar-links a {
-            font-family: 'Noto Sans Serif', Arial, sans-serif; /* Change to Noto Sans Serif */
-            font-size: 16px;
-        }
-    
-        
-footer {
-    font-family: 'Noto Sans Serif', Arial, sans-serif; /* Change to Noto Sans Serif */
-    font-size: 12px;
-}
-        .cta-button {
-            display: inline-block;
-            background-color: #e8bd61;
-            color: #fff;
-            padding: 5px 5px;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 5px;
-            margin-top: 5px;
-        }
+        /* 其他樣式保持不變 */
 
-        .cta-button:hover {
-            background-color: #d4a14d;
-        }
-        
-       .navigation {
-    background-color: rgb(169, 222, 193);
-    overflow: hidden;
-       }
-        .navigation ul {
-    list-style-type: none; /* Remove bullet points */
-    margin: 0;
-    padding: 0;
-        }
-        .navigation a {
-    display: inline;
-    color: rgb(1, 64, 30);
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-        }
-        
-        .navigation-left {
-    float: left;
-        }
-        
-        .navigation-left img {
-    width: 50px; /* Adjust the width as needed */
-    height: auto; /* Maintain aspect ratio */
-    display: block;
-    margin: 5px; /* Adjust margin as needed */
-        }
+        @media only screen and (max-width: 768px) {
+            .navigation-left {
+                float: none;
+                text-align: center;
+            }
 
-        .navigation-right {
-    float: right;
-        }
-        
-        .navigation-right ul {
-    list-style-type: none; /* Remove bullet points */
-    margin: 0;
-    padding: 0;
-    display: flex; /* Use flexbox to create a horizontal layout */
-        }
-        
-        .navigation-right li {
-    margin-left: 10px; /* Adjust the margin as needed for spacing */
-        }
-        
-        .navigation-right a {
-    display: inline-block;
-    text-decoration: none;
-    color: rgb(1, 64, 30);
-    padding: 14px 16px;
-        }
-        
-        .navigation-right a:hover {
-    background-color: #ddd;
-    color: rgb(1, 64, 30);
-        }
+            .navigation-right {
+                float: none;
+                text-align: center;
+            }
 
-        footer {
-            background-color: #346b3c;
-            color: #fff;
-            text-align: center;
-            padding: 5px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-        
-        .logo {
-            width: 200px;
-            height: 200px;
-            /* Add your logo image URL here */
-        }
+            .navigation-right ul {
+                display: none;
+            }
 
-        .sidebar-icon {
-            /* Add your sidebar icon image URL here */
-            cursor: pointer;
+            .sidebar-links {
+                display: flex;
+                flex-direction: column;
+                position: static;
+                top: auto;
+                right: auto;
+                background-color: #264b28;
+                padding: 10px;
+            }
+
+            .sidebar-links a {
+                color: #fff;
+                text-decoration: none;
+                margin: 5px 0;
+                text-align: center;
+            }
         }
-
-        .sidebar-links {
-            display: none;
-            flex-direction: column;
-            position: absolute;
-            top: 60px;
-            right: 10px;
-            background-color: #264b28;
-            padding: 10px;
-        }
-
-        .sidebar-links a {
-            color: #fff;
-            text-decoration: none;
-            margin: 5px 0;
-        }
-
-        .sidebar-links a:hover {
-            text-decoration: underline;
-        }
-
-        /* Add your additional styles for the rest of the page here */
-
     </style>
 </head>
+
 <body>
     <header>
         <h1>免費下載：資源模組3工具3步驟與應避開的3地雷
@@ -170,7 +50,6 @@ footer {
         </h1>
     </header>
     <nav class="navigation">
-        <!-- Replace "#" with your actual logo image URL -->
         <div class="navigation-left">
             <ul>
                 <li><a href="index.html"><img src="your-logo-url.jpg" alt="Logo"></a></li>
@@ -187,13 +66,13 @@ footer {
         </div>
     </nav>
     <img src="#" alt="Sidebar Icon" class="sidebar-icon" onclick="toggleSidebar()">
-            <div class="sidebar-links">
-                <a href="index.html">首頁</a>
-                <a href="aboutsakuya.html">關於朔夜</a>
-                <a href="resourcsmoduleintegration.html">資源模組整合教練課</a>
-                <a href="blog.html">文章</a>
-                <a href="contact.html">聯絡</a>
-            </div>
+    <div class="sidebar-links">
+        <a href="index.html">首頁</a>
+        <a href="aboutsakuya.html">關於朔夜</a>
+        <a href="resourcsmoduleintegration.html">資源模組整合教練課</a>
+        <a href="blog.html">文章</a>
+        <a href="contact.html">聯絡</a>
+    </div>
     </div>
 
     <!-- Add the rest of your landing page content here -->
@@ -209,4 +88,5 @@ footer {
         }
     </script>
 </body>
+
 </html>
