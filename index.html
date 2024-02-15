@@ -12,7 +12,7 @@
     <style>
         body {
             background-color: rgb(133, 204, 152, 0.2);
-            font-family: 'Noto Serif TC';font-size: 22px;
+            font-family: 'Noto Serif TC';font-size: 16px;
             margin: 0;
         }
         
@@ -40,7 +40,7 @@
             border-radius: 2px;
             box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
             display: inline-block;
-            font-size: 22px;
+            font-size: 16px;
             padding: 2px 2px;
             width: auto;
         }
@@ -168,11 +168,13 @@
                 margin-bottom: 10px;
             }
         }  
+        
         * {
-  box-sizing: border-box;
+            box-sizing: border-box;
         }
+        
         img {
-  vertical-align: middle;
+            vertical-align: middle;
         }
         
         /* Position the image container (needed to position the left and right arrows) */
@@ -270,6 +272,10 @@
             font-size: 16px;
         }
 
+        .text-content {
+            margin: 5%;
+        }
+
         footer {
             background-color: #85cc98;
             color: #fff;
@@ -284,8 +290,7 @@
 </head>
 <body>
     <header>
-    </header>
-    <!-- Simulate a smartphone / tablet -->
+        <!-- Simulate a smartphone / tablet -->
         <!-- Top Navigation Menu -->
         <div class="topnav">
             <a class="circle" href="#">
@@ -301,6 +306,7 @@
                 <i class="fa fa-bars"></i>
             </a>
         </div>
+    </header>
     <main>
         <div id="about">
             <h1 style="text-align:center">關於朔夜</h1>
@@ -336,7 +342,7 @@
                 <a class="prev" onclick="plusSlides(-1)">❮</a>
                 <a class="next" onclick="plusSlides(1)">❯</a>
             </div>
-            <div id="about-content"
+            <div id="text-content">
               <p>哈囉你好！我是朔夜。</p><br>
               <p>我已經用這套親身實證有效的方法，幫助我和我的語言模型文本情緒分析公益專案開發團隊，在提升研發品質的前提下，成功縮減研發工作的95%的工作時間。</p>
               <p>這套方法沒有複雜的步驟，只有1個核心觀念：數學的集合。即使你不擅長複雜任務拆解，容易腦袋當機,不確定任務重要性的基準為何，總是感覺別人交辦的事情總是比自己真正的目標重要，導致自己的計劃停滯不前，也能夠有系統化、按部就班解決。</p>
@@ -349,7 +355,7 @@
               <p>讓你重拾信心，意識到自己比任何語言模型更強大，更有彈性，更有創造力。畢竟語言模型只能記錄符號，並沒有人類實在生活過的豐富感受，你與生俱來的感受性就是整合力的核心。</p>
               <p>從雜亂無章的工作解放，還能累積經驗變現的基礎，利用這個過程學到的一切當斜槓π型人，就像做蛋餅只要放不同的餡料就可以賣給喜歡不同口味的客人一樣，槓桿你的時間與心力。</p>
             </div>
-            <div>
+            <div id="text-content">
                 <p>朔夜大學在台灣唸私校日文系學士，畢業後到日本工作，存錢考上音響專門學校準備當錄音師。<p>
                 <p>那我為何什麼現在從事文字情緒分析工作，開啟斜槓人生呢？</p>
                 <p>我原本是個非常害怕自己有不一樣想法的人。因為這讓我在家族晚餐的餐桌上，當個活生生的裝飾木偶。有耳無嘴。軟性的否定就像不定時炸彈，到我被炸掉之前，禁錮我的自由意志。<p>
