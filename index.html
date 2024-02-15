@@ -17,12 +17,45 @@
         }
         
         header {
-            background-color: #04aa6d;
+            background-color: #fa89b8;
+            color: #fff;
+            text-align: center;
             padding: 1px;
-            position: sticky;
             top: 0;
+            overflow: hidden;
+            background-color: #04aa6d;
+            position: sticky;
             z-index: 1000;
+        } 
+        
+        header #myLinks {
+            display: none;
         }
+        header a {
+            color: white;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 12px;
+            display: block;
+        }
+        
+        header a.icon {
+            background: #04aa6d;
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        
+        header a:hover {
+            background-color: #85cc98;
+            color: black;
+        }
+
+        header p {
+            font-size: 16px;
+        }
+        
         
         a {
             text-decoration: none;
@@ -213,45 +246,6 @@
             opacity: 1;
         }
         
-        header {
-            background-color: #fa89b8;
-            color: #fff;
-            text-align: center;
-            padding: 20px;
-            
-            overflow: hidden;
-            background-color: #04aa6d;
-            position: sticky;
-        } 
-        
-        header #myLinks {
-            display: none;
-        }
-        header a {
-            color: white;
-            padding: 14px 16px;
-            text-decoration: none;
-            font-size: 12px;
-            display: block;
-        }
-        
-        header a.icon {
-            background: #04aa6d;
-            display: block;
-            position: absolute;
-            right: 0;
-            top: 0;
-        }
-        
-        header a:hover {
-            background-color: #85cc98;
-            color: black;
-        }
-
-        header p {
-            font-size: 16px;
-        }
-
         .text-content {
             margin: 5%;
         }
