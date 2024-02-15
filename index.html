@@ -76,36 +76,6 @@
             position: fixed;
         }
         
-        .topnav {
-            overflow: hidden;
-            background-color: #04aa6d;
-            position: sticky;
-        }
-        
-        .topnav #myLinks {
-            display: none;
-        }
-        .topnav a {
-            color: white;
-            padding: 14px 16px;
-            text-decoration: none;
-            font-size: 12px;
-            display: block;
-        }
-        
-        .topnav a.icon {
-            background: #04aa6d;
-            display: block;
-            position: absolute;
-            right: 0;
-            top: 0;
-        }
-        
-        .topnav a:hover {
-            background-color: #85cc98;
-            color: black;
-        }
-        
         .circle {
             background-color: #04AA6D;
             color: white;
@@ -248,11 +218,34 @@
             color: #fff;
             text-align: center;
             padding: 20px;
+            
+            overflow: hidden;
+            background-color: #04aa6d;
+            position: sticky;
+        } 
+        
+        header #myLinks {
+            display: none;
         }
-
-        header h1 {
-            margin: 0;
-            font-size: 24px;
+        header a {
+            color: white;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 12px;
+            display: block;
+        }
+        
+        header a.icon {
+            background: #04aa6d;
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        
+        header a:hover {
+            background-color: #85cc98;
+            color: black;
         }
 
         header p {
@@ -277,24 +270,22 @@
 </head>
 <body>
     <header>
-        <div class="button-wrapper">
-            <p>資源模組整合3工具3步驟與應避開的3誤區：<a class="button" href="#frer-download">免費下載</a></p>
-        </div>
         <!-- Simulate a smartphone / tablet -->
         <!-- Top Navigation Menu -->
-        <div class="topnav">
-            <a class="circle" href="#"><img src="/images/朔夜資源模組整合 logo 500x500.svg" alt="朔夜資源模組整合 logo" style="width:60px;" class="rounded-pill"></a>
-            <div id="myLinks">
-                <a href="#about">關於朔夜</a>
-                <a href="#blog">文章</a>
-                <a href="#course">資源模組整合教練課</a>
-                <a href="#contact">聯絡我</a>
-            </div>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-            </a>
+        <a class="circle" href="#"><img src="/images/朔夜資源模組整合 logo 500x500.svg" alt="朔夜資源模組整合 logo" style="width:60px;" class="rounded-pill"></a>
+        <div id="myLinks">
+            <a href="#about">關於朔夜</a>
+            <a href="#blog">文章</a>
+            <a href="#course">資源模組整合教練課</a>
+            <a href="#contact">聯絡我</a>
         </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
     </header>
+    <div class="button-wrapper">
+        <p>資源模組整合3工具3步驟與應避開的3誤區：<a class="button" href="#frer-download">免費下載</a></p>
+    </div>
     <main>
         <div id="about">
             <h1 style="text-align:center">關於朔夜</h1>
