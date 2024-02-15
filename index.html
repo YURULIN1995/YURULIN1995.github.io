@@ -100,7 +100,7 @@
             color: black;
         }
         
-        .active {
+        .circle {
             background-color: #04AA6D;
             color: white;
         }
@@ -283,16 +283,24 @@
 </head>
 <body>
     <header>
-        <div id="navbar">
+    </header>
+    <!-- Simulate a smartphone / tablet -->
+    <div class="mobile-container">
+        <!-- Top Navigation Menu -->
+        <div class="topnav">
             <a class="circle" href="#">
                 <img src="/images/朔夜資源模組整合 logo 500x500.svg" alt="朔夜資源模組整合 logo" style="width:80px;" class="rounded-pill">
             </a>
+            <div id="myLinks">
                 <a href="#about">關於朔夜</a>
                 <a href="#blog">文章</a>
                 <a href="#course">資源模組整合教練課</a>
-                <a href="contact">聯絡我</a>
+                <a href="#contact">聯絡我</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
         </div>
-    </header>
     <main>
         <div id="about">
             <h1 style="text-align:center">關於朔夜</h1>
