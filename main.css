@@ -42,13 +42,14 @@ footer {
   text-align: center;
 }
 
-.box_inline{
-	border:1px solid black;
-	padding:10px;
-	margin:10px;
-	background-color: yellow;
-	display: inline;
-} 
+ul {
+  list-style: none;
+}
+
+li {
+  display: inline-block;
+  margin-right: 10px;
+}
 
 footer.sticky {
   position: fixed;
