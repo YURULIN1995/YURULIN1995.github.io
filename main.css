@@ -59,8 +59,14 @@ a:hover{
 }
 
 ul#horizontal-list{
-	display:inline;
+  list-style-type: none;
+	
 }
+ul#horizontal-list li{
+  display: inline;
+  font-size: 12px;
+}
+
 #menuToggle{
 	display: block;
 	position: absolute;
