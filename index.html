@@ -9,17 +9,20 @@
     <link href="main.css" rel="stylesheet" />
 </head>
 <body>
-    <div class="topnav" id="myTopnav">
-        <a class="circle" href="#"><img src="/images/朔夜資源模組整合 logo 500x500.svg" alt="朔夜圖文整合 logo" style="width:60px;" class="rounded-pill"></a>
-        <a href="#about">關於朔夜</a>
-        <a href="#porfolio">作品集</a>
-        <a href="#blog">圖文部落格</a>
-        <a href="#course">圖文整合教練課</a>
-        <a href="#contact">聯絡我</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-        </a>
-    </div>
+    <div class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+            <span></span>
+        </label>
+        <ul class="menu__box">
+            <li><a class="menu__item" href="#"><img src="/images/朔夜資源模組整合 logo 500x500.svg" alt="朔夜圖文整合 logo" style="width:60px;" class="rounded-pill"></a></li>
+            <li><a class="menu__item" href="#about">關於朔夜</a></li>
+			<li><a class="menu__item" href="#porfolio">作品集</a></li>
+			<li><a class="menu__item" href="#blog">圖文部落格</a></li>
+			<li><a class="menu__item" href="#course">圖文整合教練課</a></li>
+			<li><a class="menu__item" href="#contact">聯絡我</a></li>
+        </ul>
+  </div>
 <main>
         <h1>你的獨特，來自你與眾不同的篩選規則。人類的工作是設定規則交給迴圈執行。</h1>
         <div id="about">
