@@ -9,6 +9,9 @@ body {
   margin: 0;
   background-color: rgb(217, 238, 225);
 }
+ul {
+  float: right;
+}
 #menu__toggle {
   opacity: 0;
 }
