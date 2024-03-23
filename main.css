@@ -5,15 +5,157 @@ h1 {
 p {
   text-align: center;
 }
+.circle {
+	border-radius: 50%;
+}
 @import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
 body {
 	margin: 0;
 	padding: 0;
-	background: rgb(217, 238, 225);
+	background: rgb(247, 252, 237);
 	font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;
 	font-size: 22px;
 	overflow-x: hidden;
 }
-.circle {
-	border-radius: 50%;
+
+.bg-cover {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgb(247, 252, 237);
+	z-index: 0;
+	transition: all 350ms ease;
+	opacity: 0;
+	visibility: hidden;
+	pointer-events: none;
+}
+
+.reveal {
+	opacity: .85;
+	display: block;
+	pointer-events: auto;
+	visibility: visible;
+}
+
+.hamburger-shell {
+	margin: 0;
+	position: fixed;
+	overflow: hidden;
+	width: 70px;
+	height: 100px;
+	overflow: auto;
+	left: calc(100% - 100px);
+	top: 20px;
+	cursor: pointer;
+}
+
+.top, .middle{
+	position: absolute;
+	width: 62px;
+	height: 10px;
+	background-color: rgb(82, 47, 1);
+	transition: all 350ms ease-in-out;
+	top: 20px;
+}
+
+.middle {
+	top: 40px;
+}
+
+#menu {
+	position: fixed;
+	left: calc(100% - 292px);
+	top: 10px;
+	display: none;
+	margin: 120px 30px;
+	text-decoration: none;
+	font-family: Noto Sans;
+	font-weight: 100;
+	font-size: 20px;
+	color: rgb(82, 47, 1);
+	padding: 24px;
+	width: 200px;
+	text-align: right;
+}
+
+#menu a li {
+	text-decoration: none!important;
+	padding-bottom: 10px;
+	margin-bottom: 12px;
+	border-bottom: 1px solid black;
+	list-style: none;
+	color: rgb(82, 47, 1);
+	transition: all 150ms ease;
+}
+
+#menu a li:hover {
+	color: rgb(82, 47, 1);
+	padding-right: 3px;
+}
+
+#menu a li:hover:after {
+}
+
+#menu a {
+	text-decoration: none;
+}
+
+.rotate {
+	transform: rotate(225deg);
+	-webkit-transform: rotate(225deg);
+	top: 30px;
+	background-color: rgb(82, 47, 1);
+	height: 2px;
+}
+
+.rotate-back {
+	transform: rotate(-225deg);
+	-webkit-transform: rotate(-225deg);
+	top: 30px;
+	background-color: rgb(82, 47, 1);
+	height: 2px;
+}
+
+.top {
+-webkit-animation-delay: 100ms;
+}
+
+.middle {
+-webkit-animation-delay: 250ms;
+}
+
+.bottom {
+	-webkit-animation-delay: 400ms;
+}
+
+.menu-name {
+	font-family: Verdana;
+	font-weight: 900;
+	color: rgb(82, 47, 1);
+	font-size: 19.5px;
+	text-decoration: none;
+	position: absolute;
+	top: 56px;
+	left: -1px;
+	transition: all 350ms;
+}
+
+.bump {
+	top: 64px;
+	color: rgb(82, 47, 1);
+}
+
+.responsive-box {
+	background-color: #FFFFFF;
+	margin: 2%;
+	float: left;
+	width: 96%;
+	height: 300px;
+}
+
+.header {
+	width: 100%;
+	height: 2em;
 }
