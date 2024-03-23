@@ -5,12 +5,12 @@ h1 {
 p {
   text-align: center;
 }
-
+@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
 body {
 	margin: 0;
 	padding: 0;
 	background: rgb(217, 238, 225);
-	font-family: 'Noto Sans';
+	font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;
 	font-size: 22px;
 	overflow-x: hidden;
 }
