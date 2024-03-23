@@ -18,6 +18,7 @@ body{
 }
 
 header.sticky{
+  margin:0 px;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
