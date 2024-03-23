@@ -32,38 +32,6 @@
         <h1>你的獨特，來自你與眾不同的篩選規則。人類的工作是設定規則交給迴圈執行。</h1>
         <div id="about">
             <h1 style="text-align:center">關於朔夜</h1>
-            <div class="container">
-                <div class="mySlides">
-                    <div class="numbertext">1/ 7</div>
-                      <img src="/images/about-intro-01.png" style="width:100%">
-                </div>
-                <div class="mySlides">
-                    <div class="numbertext">2 / 7</div>
-                      <img src="/images/about-intro-02.png" style="width:100%">
-                </div>
-                <div class="mySlides">
-                    <div class="numbertext">3 / 3</div>
-                      <img src="/images/about-intro-03.png" style="width:100%">
-                </div>
-                <div class="mySlides">
-                    <div class="numbertext">4 / 7</div>
-                      <img src="/images/about-intro-04.png" style="width:100%">
-                </div>
-                <div class="mySlides">
-                    <div class="numbertext">5 / 7</div>
-                      <img src="/images/about-intro-05.png" style="width:100%">
-                </div>
-                <div class="mySlides">
-                    <div class="numbertext">6 / 7</div>
-                      <img src="/images/about-intro-06.png" style="width:100%">
-                </div>
-                <div class="mySlides">
-                    <div class="numbertext">7 / 7</div>
-                      <img src="/images/about-intro-07.png" style="width:100%">
-                </div>
-                <a class="prev" onclick="plusSlides(-1)">❮</a>
-                <a class="next" onclick="plusSlides(1)">❯</a>
-            </div>
             <div id="text-content">
               <p>哈囉你好！我是朔夜。</p><br>
                 我幫助你設計專屬你的圖文整合組合技，只保留對執行任務的最少必要知識，成功縮減再次取用文本95%的閱讀時間，提高知識文本的再利用率。<br>
@@ -102,51 +70,7 @@
   <div class="caption-container">
     <p id="caption"></p>
   </div>
-
-  <div class="row">
-    <div class="column">
-      <img class="demo cursor" src="cta-join-free-facebook-group.jpg" style="width:100%" onclick="currentSlide(1)" alt="你想先了解如何應用資源模組整合到生活及工作上，歡迎先加入免費臉書社團">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="cta-free-consultation.jpg" style="width:100%" onclick="currentSlide(2)" alt="你已經準備好要擺脫離開窮忙迴圈，變成一勞永逸達人了">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="cta-read-blog.jpg" style="width:100%" onclick="currentSlide(3)" alt="你想要用3個步驟就能減少95%的工作時間?">
-    </div>
-  </div>
-</div>
-        
-        <script>
-let slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("demo");
-  let captionText = document.getElementById("caption");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace("active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
-}
-        </script>
-        <div id="course">
+ <div id="course">
             <h1>資源模組整合教練課</h1>
             <div>
                 <h2>適合與不適合的對象</h2>
