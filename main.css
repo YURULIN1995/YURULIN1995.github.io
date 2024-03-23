@@ -60,10 +60,13 @@ a:hover{
 
 ul#horizontal-list{
   list-style-type: none;
-	
+  text-align: center;
+  margin: 0;
+  padding: 0;	
 }
 ul#horizontal-list li{
-  display: inline;
+  display: inline-box;
+  padding: 1em;
   font-size: 12px;
 }
 
