@@ -42,6 +42,14 @@ footer {
   text-align: center;
 }
 
+.box_inline{
+	border:1px solid black;
+	padding:10px;
+	margin:10px;
+	background-color: yellow;
+	display: inline;
+} 
+
 footer.sticky {
   position: fixed;
   bottom: 0;
