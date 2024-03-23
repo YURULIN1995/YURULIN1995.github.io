@@ -17,15 +17,15 @@ body{
 	overflow-x: hidden;
 }
 
-header {
-  padding: 6px 0;
-  color: rgb(225, 225, 225);
-  background: rgb(1, 77, 31);
-  text-align: center;
+header.sticky{
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
   width: 100%;
-}
+  color: black;
+  background: rgb(1, 77, 31);
+  text-align: center;
+  }
 
 .circle {
 	border-radius: 50%;
