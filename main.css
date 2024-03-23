@@ -14,3 +14,6 @@ body {
 	font-size: 22px;
 	overflow-x: hidden;
 }
+.circle {
+	border-radius: 50%;
+}
