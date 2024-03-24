@@ -71,13 +71,19 @@ a:hover{
 	color: tomato;
 }
 
-ul#horizontal-list{
+ul#law-list{
   list-style-type: none;
   text-align: center;
   margin: 0;
-  padding: 0;	
+  padding: 0;
+  transform: none;
+  opacity: 1;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: row;
 }
-ul#horizontal-list li{
+ul#law-list li{
   display: inline-box;
   padding: 1em;
   font-size: 12px;
