@@ -56,15 +56,15 @@ header.sticky{
 }
 
 footer {
-  padding: 6px 24px;
-  background: rgb(133, 204, 152);
-  text-align: center;
-}
-
-footer.sticky {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+	position: fixed;
+	height: 50px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	margin-bottom: 0px;	
+	padding: 6px 24px;
+	background: rgb(133, 204, 152);
+	text-align: center;
 }
 
 a{
