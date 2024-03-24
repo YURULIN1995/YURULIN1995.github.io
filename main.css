@@ -12,7 +12,7 @@ h1 {
 }
 
 p {
-  text-align: center;
+  text-align: left;
   font-family: "Noto Serif TC", serif;
 }
 
@@ -20,12 +20,12 @@ body{
 	margin: 0;
 	padding: 0;
 	background-color: rgb(133, 204, 152, 0.2);
+  color: rgb(212, 85, 6, 0.7);
 	font-size: 22px;
 	overflow-x: hidden;
 }
 header{
 	margin:0 px;
-	background-color: rgb(4, 170, 109);
 }
 
 header.sticky{
@@ -57,7 +57,6 @@ header.sticky{
 
 footer {
   padding: 6px 24px;
-  color: rgb(220, 220, 220);
   background: rgb(133, 204, 152);
   text-align: center;
 }
@@ -186,7 +185,7 @@ ul#law-list li{
   padding: 10px;
   padding-top: 40px;
   right: 0px;
-  background: rgb(212, 171, 102, 0.8);
+  background-color: rgb(212, 171, 102, 0.8);
   border-radius: 30px;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
@@ -229,7 +228,14 @@ ul#law-list li{
   flex-direction: row;
   margin-right: -10px;
   margin-left: 0px;
+  background: rgb(133, 204, 152);
 }
 .item {
   width: 500px;
+}
+
+.content-background{
+  margin: 0em 3em;
+  padding-top: 0em 0em;
+  background-color: rgb(255, 255, 255);
 }
