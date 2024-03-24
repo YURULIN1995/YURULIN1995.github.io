@@ -11,10 +11,14 @@ p {
 body{
 	margin: 0;
 	padding: 0;
-	background: rgb(247, 252, 237);
+	background-color: rgb(133, 204, 152, 0.2);
 	font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;
 	font-size: 22px;
 	overflow-x: hidden;
+}
+header{
+	margin:0 px;
+	background-color: rgb(4, 170, 109);
 }
 
 header.sticky{
