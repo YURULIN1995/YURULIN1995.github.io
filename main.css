@@ -1,18 +1,25 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
+
+.noto-serif tc-light {
+  font-family: "Noto Serif TC", serif;
+  font-weight: 300;
+  font-style: normal;
+}
 h1 {
   text-align: center;
+  font-family: 'Noto Sans TC';
+  font-size: 30px;
 }
 
 p {
   text-align: center;
+  font-family: "Noto Serif TC", serif;
 }
-
-@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
 
 body{
 	margin: 0;
 	padding: 0;
 	background-color: rgb(133, 204, 152, 0.2);
-	font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;
 	font-size: 22px;
 	overflow-x: hidden;
 }
@@ -51,7 +58,7 @@ header.sticky{
 footer {
   padding: 6px 24px;
   color: rgb(220, 220, 220);
-  background: background: rgb(1, 77, 31);
+  background: rgb(133, 204, 152);
   text-align: center;
 }
 
@@ -65,6 +72,8 @@ a{
   text-decoration: none;
   color: rgb(0, 0, 0);  
   transition: color 0.3s ease;
+  color: white;
+  font-family:'Noto Serif TC', serif;
 }
 
 a:hover{
@@ -88,7 +97,11 @@ ul#law-list li{
   padding: 1em;
   font-size: 12px;
 }
-
+#copyright{
+  justify-content: center;
+  font-size: 12px;
+  color: rgb(255, 255, 255);
+}
 #menuToggle{
 	display: block;
 	position: absolute;
