@@ -153,7 +153,7 @@ ul#law-list li{
 {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
-  background: rgb(4,170, 109);
+  background: rgb(84, 53, 0);
 }
 
 /*
@@ -186,7 +186,8 @@ ul#law-list li{
   padding: 10px;
   padding-top: 40px;
   right: 0px;
-  background: rgb(241, 255, 240, 0.8);
+  background: rgb(212, 171, 102, 0.8);
+  border-radius: 30px;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
