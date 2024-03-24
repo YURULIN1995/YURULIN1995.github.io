@@ -63,7 +63,7 @@ footer.sticky {
 
 a{
   text-decoration: none;
-  color: #232323;  
+  color: rgb(0, 0, 0);  
   transition: color 0.3s ease;
 }
 
@@ -113,8 +113,8 @@ ul#law-list li{
 
 #menuToggle span{
   display: block;
-  width: 33px;
-  height: 4px;
+  width: 30px;
+  height: 3px;
   margin-bottom: 5px;
   position: relative;
   background: #ffffff;
@@ -168,26 +168,25 @@ ul#law-list li{
 #menu
 {
   position: absolute;
-  width: 300px;
-  margin: -100px 0 0 0;
-  padding: 50px;
-  padding-top: 125px;
-  right: -100px;
-  background: rgb(241, 255, 240, 0.3);
+  width: 180px;
+  margin: -50px 0 0 0;
+  padding: 10px;
+  padding-top: 40px;
+  right: 0px;
+  background: rgb(241, 255, 240, 0.8);
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
   
   transform-origin: 0% 0%;
   transform: translate(100%, 0);
-  
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
 
 #menu li
 {
-  padding: 10px 0;
-  font-size: 22px;
+  padding: 3px 0;
+  font-size: 20px;
 }
 
 /*
@@ -203,7 +202,6 @@ ul#law-list li{
   #menu {
     transform: none;
     opacity: 0;
-
     transition: opacity 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
   }
 }
