@@ -213,8 +213,8 @@ ul#law-list li{
   justify-content: left;
   align-content: center;
   flex-direction: row;
-  margin-right: 0px;
-  margin-left: 30px;
+  margin-right: -10px;
+  margin-left: 0px;
 }
 .item {
   width: 500px;
