@@ -8,7 +8,6 @@ body{
 	margin: 0;
 	padding: 0;
 	background-color: rgb(133, 204, 152, 0.2);
-	color: rgb(40, 74, 46, 0.7);
 	font-size: 22px;
 	overflow-x: hidden;
 }
@@ -24,11 +23,13 @@ h1 {
 	text-align: center;
 	font-family: 'Noto Sans TC';
 	font-size: 30px;
+	color: rgb(40, 74, 46, 0.7);
 }
 
 p {
 	text-align: left;
 	font-family: "Noto Serif TC", serif;
+	color: rgb(40, 74, 46, 0.7);
 }
 
 
