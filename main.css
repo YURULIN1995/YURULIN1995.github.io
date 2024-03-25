@@ -104,7 +104,7 @@ ul#law-list{
 }
 ul#law-list li{
   display: inline-box;
-  padding: 3px;
+  padding: 1px;
   font-size: 12px;
   font-weight: 100;
 }
