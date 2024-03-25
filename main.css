@@ -19,7 +19,7 @@ body{
 	font-style: normal;
 }
 
-h1 {
+h1, h2 {
 	text-align: center;
 	font-family: 'Noto Sans TC';
 	font-size: 30px;
