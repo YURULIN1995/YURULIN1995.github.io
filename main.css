@@ -130,8 +130,8 @@ ul#law-list{
 }
 ul#law-list li{
   display: inline;
-  padding: 1px;
-  font-size: 10px;
+  padding: 3px;
+  font-size: 12px;
   font-weight: 100;
 }
 #copyright{
