@@ -1,34 +1,37 @@
-@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
 html{
-  height: 100%; /*外層高度100%*/
-  margin: 0;
-}
-
-.noto-serif tc-light {
-  font-family: "Noto Serif TC", serif;
-  font-weight: 300;
-  font-style: normal;
-}
-h1 {
-  text-align: center;
-  font-family: 'Noto Sans TC';
-  font-size: 30px;
-}
-
-p {
-  text-align: left;
-  font-family: "Noto Serif TC", serif;
+	height: 100%; /*外層高度100%*/
+	margin: 0;
 }
 
 body{
-  height: 100%; /*外層高度100%*/
+	height: 100%; /*外層高度100%*/
 	margin: 0;
 	padding: 0;
 	background-color: rgb(133, 204, 152, 0.2);
-  color: rgb(212, 85, 6, 0.7);
+	color: rgb(212, 85, 6, 0.7);
 	font-size: 22px;
 	overflow-x: hidden;
 }
+
+@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
+.noto-serif tc-light {
+	font-family: "Noto Serif TC", serif;
+	font-weight: 300;
+	font-style: normal;
+}
+
+h1 {
+	text-align: center;
+	font-family: 'Noto Sans TC';
+	font-size: 30px;
+}
+
+p {
+	text-align: left;
+	font-family: "Noto Serif TC", serif;
+}
+
+
 header{
 	margin:0 px;
 }
@@ -66,7 +69,7 @@ header.sticky{
   min-height: 100%; /*外層高度100%*/
   margin-bottom: -50px; /*隨footer高度需做調整*/
 }
-.contant{
+.content{
   padding-bottom: 50px; /*避免文字超出瀏覽器時，內容區塊不會和footer打架*/
 }
 
