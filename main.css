@@ -56,8 +56,9 @@ header.sticky{
 }
 
 footer {
-	position: fixed;
-	height: 100px;
+	position: sticky;
+	display: flex;
+	flex-direction: column;
 	bottom: 0px;
 	left: 0px;
 	right: 0px;
