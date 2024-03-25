@@ -52,20 +52,12 @@ header.sticky{
 }
 
 .content {
-  padding: 12px 18px;
+  padding-bottom: 50px; /*避免文字超出瀏覽器時，內容區塊不會和footer打架*/
 }
 
-footer {
-	position: sticky;
-	display: flex;
-	flex-direction: column;
-	bottom: 0px;
-	left: 0px;
-	right: 0px;
-	margin-bottom: 0px;	
-	padding: 6px 24px;
-	background: rgb(133, 204, 152);
-	text-align: center;
+.footer{
+  height: 70;/*設定footer本身高度*/
+  background-color: rgb(133, 204, 152);
 }
 
 a{
