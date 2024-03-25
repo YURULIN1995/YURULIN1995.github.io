@@ -1,4 +1,8 @@
 @import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
+html{
+  height: 100%; /*外層高度100%*/
+  margin: 0;
+}
 
 .noto-serif tc-light {
   font-family: "Noto Serif TC", serif;
@@ -17,6 +21,7 @@ p {
 }
 
 body{
+  height: 100%; /*外層高度100%*/
 	margin: 0;
 	padding: 0;
 	background-color: rgb(133, 204, 152, 0.2);
@@ -35,7 +40,6 @@ header.sticky{
   top: 0;
   width: 100%;
   color: black;
-  background: rgb(1, 77, 31);
   text-align: center;
   }
 
@@ -44,8 +48,11 @@ header.sticky{
 }
 
 #logo{float: left;
-	margin-right: 60px;
-	margin-top: 15px;}
+  margin: 0px;
+  padding-left: 2em;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
 #navlist{
   float: right;
 	padding-right: 0;
@@ -55,8 +62,16 @@ header.sticky{
   padding-bottom: 50px; /*避免文字超出瀏覽器時，內容區塊不會和footer打架*/
 }
 
+.wrapper {
+  min-height: 100%; /*外層高度100%*/
+  margin-bottom: -50px; /*隨footer高度需做調整*/
+}
+.contant{
+  padding-bottom: 50px; /*避免文字超出瀏覽器時，內容區塊不會和footer打架*/
+}
+
 .footer{
-  height: 70;/*設定footer本身高度*/
+  height: 50;/*設定footer本身高度*/
   background-color: rgb(133, 204, 152);
 }
 
@@ -86,12 +101,14 @@ ul#law-list{
 }
 ul#law-list li{
   display: inline-box;
-  padding: 1em;
+  padding: 3px;
   font-size: 12px;
+  font-weight: 100;
 }
 #copyright{
-	padding-top: 1em;
+	padding-top: 3px;
 	font-size: 12px;
+  font-weight: 100;
 	color: rgb(255, 255, 255);
 	display: flex;
 	justify-content: center;
