@@ -32,6 +32,10 @@ p {
 	color: rgb(40, 74, 46, 0.7);
 }
 
+iframe {
+    display: block;
+    border-style:none;
+}
 
 header{
 	margin:0 px;
