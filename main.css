@@ -283,3 +283,9 @@ ul#law-list li{
   align-items: center;
   padding:10px;
 }
+
+.centerimg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
