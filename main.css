@@ -277,7 +277,7 @@ ul#law-list li{
   }
 
 .flexitem {
-  width: 25%;
+  width: 100%;
   margin: 5px;
   justify-content: center;
   align-items: center;
