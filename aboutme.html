@@ -1,1 +1,79 @@
-
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, viewport-fit=cover">
+    <title>朔夜圖文整合</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto%20Serif%20TC:wght@400;500;600;700&amp;display=swap" media="all" onload="this.media='all'">
+    <link href="main.css" rel="stylesheet"/>
+</head>
+<body>
+	<header class="sticky">
+		<div class="centered-container">
+			<a class="circle" href="https://mind-emulation.uk/index.html"><img id="logo" height="60" width="60"src="/images/朔夜圖文整合logo-357x357.png" alt="朔夜圖文整合logo－回首頁"></a>
+			<nav class="item" id="navlist" role='navigation'>
+				<div id="menuToggle">
+					<input type="checkbox" />
+					<span></span>
+					<span></span>
+					<span></span>
+					<ul id="menu">
+						<a href="https://mind-emulation.uk/index.html"><li>回首頁</li></a>
+						<a href="https://mind-emulation.uk/aboutme.html"><li>關於朔夜</li></a>
+						<a href="https://mind-emulation.uk/index.html#portfolio"><li>作品集</li></a>
+						<a href="https://mind-emulation.uk/index.html#blog"><li>圖文部落格</li></a>
+						<a href="https://mind-emulation.uk/index.html#course"><li>圖文整合教練課</li></a>
+						<a href="https://mind-emulation.uk/index.html#contact"><li>聯絡我</li></a>
+					</ul>
+				</div>
+			</nav>
+		</div>
+	</header>
+  <div class="wrapper">
+    <div class="content">
+	    <div class="content-wrapper" id="compaign">
+		    <h1>打造低認知成本圖解力</h1>
+		    <p>我幫助軟體工程師，運用語意視覺化技巧、屬性圖（Property Graph)和借用C4 model的分層檢視概念，合併重疊語意，每週減少12小時查詢、閱讀開發文件，降低95%誤解率，打造低認知成本開發文件圖解力。</p>
+	    </div>
+	    <div class="content-background-lightgreen">
+	    	<div class="content-wrapper" id="about">
+		    	<h1>關於朔夜</h1>
+		    	<img class="centerimg" src="/images/story.PNG" alt="story">
+		    	<p>我是一名後端工程師兼道德駭客證照CEH的考生。<br>
+			    其實我很久以前的工作是在日本的醫院當中日醫療翻譯員。<br>
+			    我不是血統純正的資工系出身，當時為了更好的收入，我花了不少金錢和時間找老師學習後端的知識、技術，成功轉行。<br>
+			    我一直想拚命趕上同事的工作能力，希望找到更快有效的學習方式，就報名心智圖法課。發現用到我大學時期學過的語意網路的原理，而且和自然語言處理有關。<br>
+			    由於心智圖的中心主題放在圖面正中央，節點之間若存在複雜的網狀關聯性，密密麻麻的關聯線會蓋住中心主題，也會與樹狀分支交錯。<br>
+			    平面圖的好處是，節點不多的時候人眼一掃描就能發現重複概念並刪除，但反面來說，概念節點量多到像電路圖那樣，就沒辦法手動一條一條佈線了。複雜度高，線條容易交錯，也容易忽略節點間的距離沒有最優化<br>
+			    後來改用ChatGPT 摘要開發文件，用Obsidian 筆記軟體管理開發文件的圖解筆記。<br>
+			   Obsidian 筆記軟體雖然有Graph view 視圖，看起來酷似蒲公英，可以套用多種篩選器篩選筆記。但是!在Graph View視圖中我看到的筆記是1顆1顆的節點，我並不知道節點間有多少內容重疊。每則筆記的顆粒度視任務而定，大小不一。<br>
+			    而ChatGPT缺乏人類生活的常識，有時摘要會誤砍出現頻率不高但重要的詞彙，有時摘要出來的結果和我先畫心智圖，再根據語意與生活經驗推理出來的結果有所出入。<br>
+			    無論是心智圖、Obsidian 或功能類似的筆記軟體、語言模型，都各有優缺點，無法單靠一種工具完成概念去重(deduplication)。<br>
+			    我在摘要時觀察到，當人類在判斷語意有無重疊時，判斷依據是語詞、句子背後連結的視覺經驗，而不是文字形式本身。自然語言處理對語詞標記化 (tokenization)，並不會連結人類視覺經驗判斷語意。<br>
+			    我改用屬性圖(Property Graph)描述名詞節點間的關聯性與屬性，再用C4 Model的概念，將文件依據抽象程度分層。終於清晰看見各層之間的對應關係和同層之間的關聯性。<br>
+			    我改變對ChatGPT下的指令，讓它給我一段文字的不重複名詞與動詞清單，有必要才提取形容詞。<br>
+			    再加上人工審核不重複語詞清單的近義詞，對近義詞背後的視覺經驗模組化或聯集，替換涵蓋範圍更完整的詞彙。<br>
+			    從此，我的圖解裡，概念不重複也不遺漏。<br>
+			    我和同事、同學溝通的時間減少了95%，幾乎沒有再產生誤會了。<br>
+			    為了能幫助到更多人，我在2024年成立個人品牌「朔夜圖文整合」，撰寫開發文件視覺化呈現的文章，開設開發文件視覺化教練課，希望能夠幫助需要閱讀、管理大量開發文件的軟體工程師。</p>
+			<div class="flex-container">
+				<img class="flexitem" src="/images/mindmap_problem.PNG" alt="mindmap-problem">
+				<img class="flexitem" src="/images/C4 model_Property Graph.PNG" alt="C4 model-property graph">
+		   	 </div>
+		</div>
+	    </div>
+	<footer class="footer">
+		<p id="copyright">&copy; 2024 朔夜圖文整合. 版權所有，翻印必究 All rights reserved.</p>
+		<ul id="law-list">
+			<li><a href="/privacy.html">隱私權政策</a><li>
+			<li><a href="/disclaimer.html">免責聲名</a><li>
+			<li><a href="/copyright.html">著作權聲名</a><li>
+			<li><a href="/refund.html">退款政策</a><li>
+			<li><a href="/terms-and-conditions.html">服務條款與細則</a><li>
+		</ul>
+	</footer>
+</body>
+<script src="main.js"></script>
+    
+</html>
