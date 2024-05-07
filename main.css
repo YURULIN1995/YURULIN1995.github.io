@@ -98,6 +98,7 @@ a.circle {
 
 .wrapper {
   min-height: 100%; /*外層高度100%*/
+  margin-top: 0px auto;
   margin-bottom: -50px; /*隨footer高度需做調整*/
 }
 .content{
