@@ -265,10 +265,14 @@ ul#law-list li{
   }
 }
 
-.content-background{
-  margin: 0em 3em;
+.content-background-lightgreen {
+  margin: 0em 0em;
   padding-top: 0em 0em;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(250, 255, 250);
+}
+.content-wrapper {
+  margin: 0em 2em;
+  padding-top: 0em 0em;
 }
 
 .flex-container {
