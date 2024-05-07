@@ -8,8 +8,6 @@ function showText(text) {
 }
 
 showText('header offsetTop = ' + stickyOffset + ', pageYOffset = ' + window.pageYOffset);  
-
-
 window.onscroll = function () {
     showText('header offsetTop = ' + stickyOffset + ', pageYOffset = ' + window.pageYOffset);
   };
