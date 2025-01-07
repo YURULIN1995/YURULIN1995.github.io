@@ -1,27 +1,11 @@
 <!DOCTYPE html>
+<html lang="zh-tw">
 <head>
+  <link href="main.css" rel="stylesheet"/>
+  <script src="main.js"></script>
+  
 </head>
   <body>
-    <!-- header -->
-    <div class="headerPage"></div>
-    <!--main--> 
-    <!--main-end-> 
-    <!--footer-->  
-    <div class="footerPage"></div>
-  </body>
-  <script>
-        // JavaScript to include header and footer
-        document.addEventListener("DOMContentLoaded", () => {
-            fetch("header.html")
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById("header").innerHTML = data;
-                });
-            fetch("footer.html")
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById("footer").innerHTML = data;
-                });
-        });
-    </script>
+    <div id="header"></div>
+    <div id="footer"></div>
 </html>
