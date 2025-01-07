@@ -105,8 +105,13 @@ a.circle {
   padding-bottom: 50px; /*避免文字超出瀏覽器時，內容區塊不會和footer打架*/
 }
 
+.fixedFooter{
+	height: 50px:
+}
+
 #footer{
-  height: 50;/*設定footer本身高度*/
+  height: 50px;/*設定footer本身高度*/
+  width: 100%;
   background-color: rgb(133, 204, 152);
 }
 
